@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,300;0,400;0,700;1,400&family=Roboto:wght@400;500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    background-color: #f6f6f6;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "roboto mono";
+}
+main{
+    position: relative;
+    border: solid 1px black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+.illustration{
+    width: 50%;
+}
+.illustration .desktop-image{
+    width: 100%;
+}
+
+.signup__section{
+    border: solid 1px #202020;
+    width: 50%;
+    height: 100%;
+    background-color: #f6f6f6;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.signup__header{
+    margin-bottom: 20px;
+}
+.signup__header-coffeeImage{
+    width: 45%;
+    margin-bottom: 26px;
+}
+
+input{
+    display: block;
+    margin-bottom: 10px;
+    padding: 10px;
+    height: 40px;
+    width: 100%;
+    border-radius: 5px;
+    box-shadow: 0px 0px 0px #2020203e;
+    transition: box-shadow 0.2s;
+}
+input:nth-child(1), input:nth-child(2){
+    border: solid 1px #20202046;
+}
+input:nth-child(1):focus, input:nth-child(2):focus{
+    border: solid 1px #202020;
+    box-shadow: 2px 2px 0px #2020203e;
+}
+
+
+input:nth-child(3){
+    margin-top: 36px;
+    margin-bottom: 26px;
+    color: #fcfcfc;
+    background-color: #202020;
+    border: none;
+    transition: background-color 0.3s;
+    cursor: pointer;
+}
+input:nth-child(3):hover{
+    background-color: #FF8686;
+}
+input[placeholder="Enter your email"], input[placeholder="Enter your password"]{
+    font-family: roboto;
+}

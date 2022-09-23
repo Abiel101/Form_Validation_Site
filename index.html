@@ -4,11 +4,39 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
     <title>Document</title>
 </head>
 <body>
 
-    <h2>Log in to website</h2>
+    <main>
+
+        <div class="illustration">
+            <img class="desktop-image" src="./Resources/Illustration.svg" alt="illustration">
+
+            <img style="display: none;" class="mobile-image" src="./Resources/iphone-illustration.png" alt="mobile-illustration">
+        </div>
+
+        <div class="signup__section">
+            <div class="signup__content">
+                <header class="signup__header">
+                    <img class="signup__header-coffeeImage" src="./Resources/cup-of-drink.png" alt="">
+                    <h1>Create an account</h1>
+                </header>
+
+                <form action="submitted.html">
+                    <input type="text" name="email" placeholder="Enter your email">
+                    <input type="password" name="password" placeholder="Enter your password">
+
+                    <input type="submit" value="Sign up">
+                </form>
+
+                <div class="signup__footer">
+                    <p>Already have an account? <a class="login-link" href="#">Log in</a></p>
+                </div>
+            </div>
+        </div>
+    </main>
     
     <script src="form_validation.js"></script>
 </body>
