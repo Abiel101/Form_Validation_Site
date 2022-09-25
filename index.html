@@ -24,11 +24,19 @@
                     <h1>Create an account</h1>
                 </header>
 
-                <form action="submitted.html">
-                    <input type="text" name="email" placeholder="Enter your email">
-                    <input type="password" name="password" placeholder="Enter your password">
+                <form name="Sign up" id="formSignUp" action="submitted.html" method="get">
+                    <span class="input-container">
+                        <input type="text" name="email" placeholder="Enter your email">
+                        <img id="email-checkmark" class="validation-indicator green-checkmark" src="./Resources/green-checkmark.png" alt="green-checkmark">
+                        <img id="email-xmark" class="validation-indicator red-xmark" src="./Resources/red-xmark.png" alt="red-xmark">
+                    </span>
+                    <span class="input-container">
+                        <input type="password" name="password" placeholder="Enter your password">
+                        <img id="password-checkmark" class="validation-indicator green-checkmark" src="./Resources/green-checkmark.png" alt="green-checkmark">
+                        <img id="password-xmark" class="validation-indicator red-xmark" src="./Resources/red-xmark.png" alt="red-xmark">
+                    </span>
 
-                    <input type="submit" value="Sign up">
+                    <input type="submit" id="submit" value="Sign up">
                 </form>
 
                 <div class="signup__footer">

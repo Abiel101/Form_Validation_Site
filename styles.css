@@ -50,7 +50,11 @@ main{
     margin-bottom: 26px;
 }
 
+/* Styling for how impute looks like */
+
 input{
+    position: relative;
+    z-index: 1;
     display: block;
     margin-bottom: 10px;
     padding: 10px;
@@ -83,4 +87,19 @@ input:nth-child(3):hover{
 }
 input[placeholder="Enter your email"], input[placeholder="Enter your password"]{
     font-family: roboto;
+}
+
+/* Styling for visual validation animation */
+.input-container{
+    position: relative;
+}
+.validation-indicator{
+    position: absolute;
+    top: 10px;
+    right: 0px;
+    z-index: 0;
+    transition: right 0.2s;
+}
+.show-indicator{
+    right: -30px;
 }
